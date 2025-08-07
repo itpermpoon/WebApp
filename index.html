@@ -1,11 +1,38 @@
 <!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ระบบแจ้งซ่อม</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>แบบฟอร์มแจ้งซ่อม</h1>
+  <form id="repair-form">
+    <label for="name">ชื่อผู้แจ้ง</label>
+    <input type="text" id="name" required>
 
-<html>
-   <head>
-      <base target="_top">
-      <meta name="viewport" content="width=device-width, initial-scale=1">      
-   </head>
-   <body>
-      <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;border: 0;" src="https://script.google.com/macros/s/AKfycbwcWTSDT7XhOhpetQIY7G5cPX51dKLqx03FkOCArsU-mLzn1S7kIs-iQqJmZtq3xOhCLw/exec"></iframe>
-   </body>
+    <label for="email">อีเมล</label>
+    <input type="email" id="email" required>
+
+    <label for="issue">รายละเอียดปัญหา</label>
+    <textarea id="issue" required></textarea>
+
+    <button type="submit">ส่ง</button>
+  </form>
+
+  <h2>รายการแจ้งซ่อมก่อนหน้า</h2>
+  <table id="request-table">
+    <thead>
+      <tr>
+        <th>ผู้แจ้ง</th>
+        <th>อีเมล</th>
+        <th>รายละเอียด</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
 </html>

@@ -1,0 +1,10 @@
+{
+  "name": "repair-app",
+  "version": "1.0.0",
+  "description": "Simple repair request web app",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "author": "",
+  "license": "MIT"
+}
